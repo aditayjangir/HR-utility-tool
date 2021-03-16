@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>home</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="{{url_for('static', filename='js/index.js')}}"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Create New Employee Database</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <form class="row g-3">
+                        <div class="col-md-6">
+                            <span class="btn btn-primary" onclick="request_page()">Record Data</span>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <h3>Show Employee Records</h3>
+        <div class="row">
+            <div class="col">
+                <form action="fetchall">
+                    <div class="col-md-6" id="container">
+                        <button class="btn btn-primary">Show data</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div id="alert" role="alert">
+            <strong id="message"></strong>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span id="cross" aria-hidden="true"></span>
+            </button>
+        </div>
+    </div>
+</body>
+
+</html>

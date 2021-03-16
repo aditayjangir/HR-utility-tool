@@ -1,0 +1,33 @@
+[
+    {
+        "HR Department": [
+            "Staffing specialist",
+            "HR assistant",
+            "HR associate",
+            "HR representative"
+        ],
+        "Engg Deparment": [
+            "Assistent engineer",
+            "junior engineer",
+            "Trainee engineer",
+            "project manager"
+        ],
+        "cloud": [
+            "Devops trainer",
+            "AWS infrastructure",
+            "Incident management",
+            "cloud computing-senior engineer"
+        ],
+        "customer service": [
+            "customer service representative",
+            "client service coordinator",
+            "Client relation associate"
+        ]
+    },
+    {
+        "london": "\u20ac",
+        "india": "\u20B9",
+        "Atlanta": "\u0024",
+        "Tokyo": "\u00A5"
+    }
+]
